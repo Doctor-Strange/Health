@@ -1,0 +1,80 @@
+@import "../../../../styles/colors";
+.manage_appointment {
+  h1 {
+    font-family: Quicksand, sans-serif;
+    font-weight: bold;
+    font-size: 4rem;
+    color: $dark_blue;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+  }
+  .appointment_list_wrapper {
+    width: 48rem;
+    margin: auto;
+    background-color: $teal;
+    padding: 3rem;
+    border-radius: 1.2rem;
+    font-size: 1.4rem;
+    color: $white;
+    margin-bottom: 4rem;
+    .table_header,
+    .appoints_list {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+    .table_header {
+      margin-bottom: 2rem;
+      border-bottom: 1px solid #fff;
+    }
+    .appoints_list {
+      margin-bottom: 2rem;
+      border-bottom: 1px solid #fff;
+    }
+    .title {
+      font-weight: bold;
+      width: 50%;
+    }
+    .date,
+    .time {
+      width: 20%;
+      font-weight: bold;
+    }
+    .cancel {
+      width: 10%;
+      font-weight: bold;
+      text-align: center;
+      svg {
+        cursor: pointer;
+      }
+    }
+  }
+}
+@media screen and(max-width:557px) {
+  .appointment_list_wrapper {
+    width: 100% !important;
+    overflow-x: scroll;
+    /* width */
+    &::-webkit-scrollbar {
+      height: 15px;
+    }
+    /* Track */
+    &::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background: #888;
+    }
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+    .scroller {
+      width: 480px;
+    }
+  }
+}

@@ -1,0 +1,116 @@
+@import "../../../styles/colors";
+
+.header {
+  position: relative;
+  direction: rtl;
+  transition: all 1s ease;
+  .link {
+    margin: 1.6rem 0;
+  }
+  nav {
+    display: inline-block;
+    vertical-align: middle;
+    .add_appointment {
+      background-color: $teal;
+      border-radius: 4px;
+      color: $white;
+      font-size: 1.5rem;
+      font-weight: 700;
+      text-align: center;
+      padding: 1rem 2rem;
+      display: inline-block;
+      border: 0;
+      vertical-align: center;
+      transition: 0.25s all;
+      &:hover {
+        border-radius: 1rem;
+      }
+      svg {
+        vertical-align: bottom;
+        display: inline-block;
+        margin-right: 0.5rem;
+      }
+    }
+    .appointment_management {
+      border-radius: 4px;
+      color: $dark_blue;
+      font-size: 1.5rem;
+      font-weight: 700;
+      text-align: center;
+      padding: 1rem 2rem;
+      display: inline-block;
+      border: 0;
+      vertical-align: center;
+      transition: 0.25s all;
+      &:hover {
+        border-radius: 1rem;
+      }
+      svg {
+        vertical-align: bottom;
+        display: inline-block;
+        margin-right: 0.5rem;
+      }
+    }
+  }
+  .logo {
+    float: left;
+    margin: 1rem 0;
+    z-index: 1000;
+  }
+  .menu_icon {
+    display: none;
+  }
+  .back_drawer {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 557px) {
+  .header {
+    direction: ltr;
+    .menu_icon {
+      display: block;
+      position: absolute;
+      right: 1.6rem;
+      top: 2rem;
+      cursor: pointer;
+    }
+    .logo {
+      float: none;
+      display: inline-block;
+      margin: 1rem 0;
+      position: relative;
+    }
+    nav {
+      display: none;
+    }
+    .back_drawer {
+      position: fixed;
+      display: block;
+      width: 100%;
+      height: 100%;
+      top: 0px;
+      z-index: 998;
+      background-color: rgba($dark_blue, 0.5);
+    }
+    .show_menu {
+      position: fixed;
+      left: 0;
+      top: 0px;
+      background: #fff;
+      width: 80%;
+      display: block;
+      padding-top: 9rem;
+      z-index: 999;
+      height: 100%;
+      direction: rtl;
+      text-align: left;
+      transform: translateX(0);
+      .link {
+        color: $dark_blue;
+        background-color: transparent;
+        margin-top: 0;
+      }
+    }
+  }
+}

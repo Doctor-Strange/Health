@@ -1,0 +1,115 @@
+@import "../../../../styles/colors";
+.make_appointment {
+  h1 {
+    font-family: Quicksand, sans-serif;
+    font-weight: bold;
+    font-size: 4rem;
+    color: $dark_blue;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+  }
+  form {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 48rem;
+    border-radius: 1.2rem;
+    background-color: $dark_blue;
+    padding: 3rem;
+    margin-bottom: 4rem;
+    font-size: 1.4rem;
+    .field_wrapper {
+      width: 100%;
+      margin-bottom: 2rem;
+      label {
+        color: #fff;
+        display: block;
+        margin-bottom: 1rem;
+      }
+      input,
+      .DatePicker__input {
+        width: 100%;
+        padding: 1rem;
+        font-size: 1.4rem;
+        border-radius: 0.5rem;
+      }
+    }
+    .time_picker_wrapper {
+      label {
+        margin-bottom: 2.5rem;
+      }
+    }
+    .form_button {
+      height: 42px;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      -webkit-transition: 0.25s all;
+      transition: 0.25s all;
+      font-weight: bold;
+      font-size: 1.4rem;
+      padding: 1rem 1.4rem;
+      display: inline-block;
+      margin-top: 1rem;
+      border-radius: 0.8rem;
+      background-color: transparent;
+      color: #fff;
+      &:hover {
+        color: $teal;
+        background-color: #fff;
+      }
+    }
+    .error_message {
+      color: firebrick;
+      font-size: 1.6rem;
+      display: block;
+      width: 100%;
+      text-align: left;
+      font-weight: bold;
+      margin-top: 2rem;
+    }
+  }
+}
+@media screen and(max-width:557px) {
+  .make_appointment {
+    form {
+      width: 100%;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-color: transparent;
+      padding: 0;
+      margin-bottom: 4rem;
+      font-size: 1.4rem;
+      .field_wrapper {
+        width: 100%;
+        margin-bottom: 2rem;
+        label {
+          color: $dark_blue;
+        }
+      }
+      .form_button {
+        border: 1px solid rgba($dark_blue, 0.5);
+        -webkit-transition: 0.25s all;
+        transition: 0.25s all;
+        font-weight: bold;
+        font-size: 1.4rem;
+        padding: 1rem 1.4rem;
+        display: inline-block;
+        margin-top: 1rem;
+        border-radius: 0.8rem;
+        background-color: transparent;
+        color: $dark_blue;
+        &:hover {
+          color: $teal;
+          background-color: $dark_blue;
+        }
+      }
+    }
+  }
+}

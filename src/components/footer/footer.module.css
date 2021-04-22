@@ -1,0 +1,92 @@
+.footer {
+  background-color: #1d2a4d;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  color: #fff;
+  font-size: 1.4rem;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  z-index: 1;
+}
+.about_us {
+  width: 30%;
+}
+.about_us a {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.about_us a img {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 1.2rem;
+}
+.about_us p {
+  margin-top: 2rem;
+  line-height: 2;
+  padding-right: 3rem;
+}
+.department,
+.footer_links {
+  width: 20%;
+}
+.department li,
+.footer_links li {
+  cursor: pointer;
+  line-height: 3;
+  color: #848e9f;
+  transition: 0.25s all;
+}
+.department li:hover,
+.footer_links li:hover {
+  color: #21cdc0;
+}
+
+.contact_us {
+  background-color: #fff;
+  border-radius: 2rem;
+  padding: 20px;
+}
+.contact_us h3 {
+  color: #0e204d;
+}
+.contact_us p {
+  color: #848e9f;
+}
+.contact_us a {
+  margin: 2rem 0;
+  display: block;
+  color: #3851a2;
+  font-size: 2rem;
+  font-family: Quicksand, sans-serif;
+  font-weight: bold;
+}
+.contact_us svg {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.footer h3 {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 968px) {
+  .footer {
+    display: block;
+  }
+  .about_us {
+    width: 100%;
+  }
+  .department,
+  .footer_links {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+  }
+  .contact_us {
+    width: auto;
+    display: inline-block;
+  }
+}

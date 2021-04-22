@@ -1,0 +1,39 @@
+@import "./styleReset.scss";
+@import "./units";
+@import "./colors";
+@import "./font";
+@import "./function";
+@import "./mixin";
+@import "./units";
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-size: $font_size;
+  font-family: $font_family;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+// Main
+main {
+  min-height: 55rem;
+}
+
+.responsive {
+  padding: 0 1.6rem;
+}
+
+input {
+  &:focus {
+    outline: none;
+  }
+}
